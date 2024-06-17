@@ -109,36 +109,6 @@ a{
     color: black;
 }
 
-/*menu responsive*/
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: flex;
-        height: 60px;
-        text-align: auto;
-        display: flex;
-        position: fixed;
-        justify-content: space-between;
-    }
-
-    .navbar a {
-        padding: 10px 15px;
-        width: 100%;
-        box-sizing: border-box;
-        text-align: left;
-    }
-
-    .nav-derecha{
-        display: flex;
-        padding-top: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar a {
-        padding: 10px 5px;
-        font-size: 14px;
-    }
-}
 
 /*galeria responsive*/
 /* Estilos para dispositivos de hasta 768px de ancho */
