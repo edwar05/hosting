@@ -156,31 +156,40 @@ a{
 }
 
 /*responsive*/
+
+/* Estilos responsivos para dispositivos de hasta 768px */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: flex;
-        height: 60px;
-        text-align: auto;
+        flex-direction: column;
+        height: auto;
         display: flex;
     }
 
     .navbar a {
-        padding: 0px 15px;
+        padding: 10px 15px;
         width: 100%;
         box-sizing: border-box;
         text-align: left;
-        padding-top: 10px ;
+        border-bottom: 1px solid #444;
     }
 
-    .nav-derecha{
+    .nav-derecha {
         display: flex;
-        padding-top: 5px;
+        flex-direction: column;
+        width: 100%;
     }
 }
 
+/* Estilos responsivos para dispositivos de hasta 480px */
 @media (max-width: 480px) {
     .navbar a {
         padding: 10px 5px;
         font-size: 14px;
+    }
+
+    .nav-derecha {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
