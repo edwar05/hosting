@@ -40,6 +40,7 @@ body {
 }
 
 
+
 /*h1 presentacion */         
 .presentacion{
     font-size: 20px;
@@ -155,41 +156,25 @@ a{
         font-size: 18px; 
 }
 
-/*responsive*/
 
-/* Estilos responsivos para dispositivos de hasta 768px */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        height: auto;
+        flex-direction: flex;
+        height: 60px;
+        text-align: auto;
         display: flex;
     }
 
     .navbar a {
-        padding: 10px 15px;
+        padding: 0px 15px;
         width: 100%;
         box-sizing: border-box;
         text-align: left;
-        border-bottom: 1px solid #444;
+        padding-top: 10px ;
     }
 
-    .nav-derecha {
+    .nav-derecha{
         display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-}
-
-/* Estilos responsivos para dispositivos de hasta 480px */
-@media (max-width: 480px) {
-    .navbar a {
-        padding: 10px 5px;
-        font-size: 14px;
-    }
-
-    .nav-derecha {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        padding-top: 5px;
     }
 }
