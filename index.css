@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -179,6 +178,8 @@ a{
     .nav{
         display: flex;
         text-aling: left;
+    }
+    
   .navbar a {
       padding: 10px 5px;
       font-size: 14px;
