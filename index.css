@@ -38,9 +38,6 @@ body {
     float: right; 
     font-family: 'Times New Roman', Times, serif;
   }
-  
-
-
 
 /*h1 presentacion */         
 .presentacion{
@@ -155,4 +152,38 @@ a{
         font-size: 18px; 
 }
 
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: flex;
+      height: 60px;
+      text-align: auto;
+      display: flex;
+  }
+
+  .navbar a {
+      padding: 0px 15px;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: left;
+      padding-top: 10px ;
+  }
+
+  .nav-derecha{
+      display: flex;
+      padding-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar a {
+      padding: 10px 5px;
+      font-size: 14px;
+  }
+
+  .nav-derecha{
+    display: flex;
+    padding-top: 5px;
+    text-align: left;
+}
+}
 
