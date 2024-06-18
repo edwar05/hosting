@@ -6,7 +6,6 @@
 body {
     font-family: monospace;
     background: linear-gradient(to left , #89b8bc, #645ebf, #344160) no-repeat;
-    height: auto;
 }
 
 
@@ -132,7 +131,9 @@ a{
 
 /* Estilos para dispositivos de hasta 480px de ancho */
 @media (max-width: 480px) {
-    section {
+    body{
+        height: 800px;
+    }
         padding: 5px;
        display: grid;
         grid-template-columns: 
@@ -143,10 +144,9 @@ a{
         align-items: center;
         margin-left: 0;
     }
-}
-
     .button span {
         font-size: 18px; 
+}
 }
 
 @media (max-width: 768px) {
@@ -172,10 +172,12 @@ a{
 }
 
 @media (max-width: 480px) {
-    .nav{
-        display: flex;
-        text-aling: left;
-    }
+    .navbar {
+      flex-direction: flex;
+      height: 60px;
+      text-align: auto;
+      display: flex;
+  }
     
   .navbar a {
       padding: 10px 5px;
