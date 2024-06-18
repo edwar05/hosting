@@ -155,6 +155,7 @@ a{
     .button span {
         font-size: 18px; 
 }
+
 /*responsive*/
 @media (max-width: 768px) {
   .navbar {
@@ -188,5 +189,4 @@ a{
     display: flex;
     padding-top: 5px;
     text-align: left;
-}
 }
