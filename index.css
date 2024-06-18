@@ -16,10 +16,9 @@ body {
     width: 100%;
     height: 80px; 
     z-index: 1;
-    font-family: sans-serif;
-}  
-    
-.navbar a {   
+    font-family: 'Times New Roman', Times, serif;
+  }  
+  .navbar a {   
     float: left;   
     display: block;   
     color: #f2f2f2;   
@@ -27,18 +26,18 @@ body {
     padding: 30px 16px;   
     text-decoration: none;   
     font-size: 17px; 
-}  
+  }  
 
-.navbar a:hover {   
+  .navbar a:hover {   
     background: #ddd;   
     color: black; 
-}  
-
-.nav-derecha {   
+  }  
+  
+  .nav-derecha {   
     float: right; 
-    font-family: sans-serif;
-}
-
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
 
 
 /*h1 presentacion */         
@@ -124,8 +123,6 @@ a{
         grid-template-columns: repeat(1, 1fr);
         min-height: 100px;
 }
-    
-
     .contenedor-section{
         padding: 5px;
         margin: 0;
@@ -141,7 +138,7 @@ a{
 @media (max-width: 480px) {
     section {
         padding: 5px;
-        display: grid;
+       display: grid;
         grid-template-columns: 
         repeat(
             auto-fit, minmax(200px,)
@@ -158,35 +155,36 @@ a{
 
 /*responsive*/
 @media (max-width: 768px) {
-  .navbar {
-      flex-direction: flex;
-      height: 60px;
-      text-align: auto;
-      display: flex;
+    .navbar {
+        flex-direction: flex;
+        height: 60px;
+        text-align: auto;
+        display: flex;
+    }
+  
+    .navbar a {
+        padding: 0px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+        padding-top: 10px ;
+    }
+  
+    .nav-derecha{
+        display: flex;
+        padding-top: 5px;
+    }
   }
-
-  .navbar a {
-      padding: 0px 15px;
-      width: 100%;
-      box-sizing: border-box;
-      text-align: left;
-      padding-top: 10px ;
-  }
-
-  .nav-derecha{
+  
+  @media (max-width: 480px) {
+    .navbar a {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+  
+    .nav-derecha{
       display: flex;
       padding-top: 5px;
+      text-align: left;
   }
-}
-
-@media (max-width: 480px) {
-  .navbar a {
-      padding: 10px 5px;
-      font-size: 14px;
   }
-
-  .nav-derecha{
-    display: flex;
-    padding-top: 5px;
-    text-align: left;
-}
