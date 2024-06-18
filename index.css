@@ -6,6 +6,7 @@
 body {
     font-family: monospace;
     background: linear-gradient(to left , #89b8bc, #645ebf, #344160) no-repeat;
+    height: auto;
 }
 
 
@@ -112,10 +113,6 @@ a{
 /*galeria responsive*/
 /* Estilos para dispositivos de hasta 768px de ancho */
 @media (max-width: 768px) {
-    body{
-        height: 800px;
-        overflow-x: hidden;
-    }
     section {
         padding: 5px;
         display: grid;
