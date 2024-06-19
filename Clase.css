@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to left , #89b8bc, #645ebf, #344160 );
+   
+}
+
+.navbar { 
+    overflow: hidden; 
+    background-color: #333;   
+    position: fixed;   
+    top: 0;   
+    width: 100%;
+    height: 80px; 
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+}  
+    
+.navbar a {   
+    float: left;   
+    display: block;   
+    color: #f2f2f2;   
+    text-align: center;   
+    padding: 30px 16px;   
+    text-decoration: none;   
+    font-size: 17px; 
+}  
+
+.navbar a:hover {   
+    background: #ddd;   
+    color: black; 
+}  
+
+.nav-derecha {   
+    float: right; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: flex;
+        height: 60px;
+        text-align: auto;
+        display: flex;
+    }
+
+    .navbar a {
+        padding: 0px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+        padding-top: 10px ;
+    }
+
+    .nav-derecha{
+        display: flex;
+        padding-top: 5px;
+    }
+}
+
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado a flex-start para que las cajas se ajusten con el contenido */
+    height: calc(100vh - 80px); /* Altura de la ventana menos la altura de la navbar */
+    margin-top: 80px; /* Espacio para la navbar */
+    padding: 20px; /* Añadido padding para dar espacio alrededor */
+    box-sizing: border-box;
+}
+
+.caja {
+    background: rgba(0,0,0,.2);
+    padding: 20px;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 1000px; /* Mantener una anchura fija */
+    max-width: 100%; /* Asegurarse de que no exceda el contenedor padre */
+    margin-bottom: 20px; /* Espacio entre múltiples cajas */
+    box-sizing: border-box;
+    text-align:center;
+}
+
+.caja h1 {
+    margin-top: 0;
+    color: white;
+}
+
+.caja p {
+    color: #ffffff;
+}
+
+
+.caja2{
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border: 0px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px; /* Mantener una anchura fija */
+    max-width: 100%; /* Asegurarse de que no exceda el contenedor padre */
+    margin-bottom: 20px; /* Espacio entre múltiples cajas */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.caja3{
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px; /* Mantener una anchura fija */
+    height: 500px;
+    max-width: 100%; /* Asegurarse de que no exceda el contenedor padre */
+    margin-bottom: 20px; /* Espacio entre múltiples cajas */
+    box-sizing: border-box;
+    
+}
+
+h4, h2, small,a{
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.carousel {
+    width: 87%;
+    margin: 0px 0px;
+
+}
+
+@media(min-width:768px){
+    .carousel{
+        margin: 0px 60px; 
+    }
+}
+
+.carousel h2 {
+    font-size: 45px;
+    line-height: 38px;
+    padding-bottom: 50px;
+    opacity: .9;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+
+.carrusel-list{
+
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    width: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;   
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.carrusel-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+
+.carrusel {
+    position: relative;
+    width: 220px;
+    padding: 0 0px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.carrusel h4{
+
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+    
+}
+
+.carrusel h4 small {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+
+}
+
+
+.carrusel a img {
+
+    object-fit: cover;
+    height: 400px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: .3 ease-in-out;
+
+}
+
+@media(min-width: 768px) {
+    .carrusel {
+        width: 275px;
+    } 
+    .carrusel a img {
+        width: 250px;
+    }
+}
+
+
+.carrusel-arrow {
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.carrusel-arrow:focus{
+    outline: 0;
+}
+
+.carrusel-arrow svg {
+    width: 10px;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.7);
+
+}
+
+.carrusel-prev {
+    left: 0px;
+}
+
+.carrusel-next {
+    right: 0px;
+}
