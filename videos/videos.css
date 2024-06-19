@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to left , #89b8bc, #645ebf, #344160 );
+   
+}
+
+.navbar { 
+    overflow: hidden; 
+    background-color: #333;   
+    position: fixed;   
+    top: 0;   
+    width: 100%;
+    height: 80px; 
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+}  
+    
+.navbar a {   
+    float: left;   
+    display: block;   
+    color: #f2f2f2;   
+    text-align: center;   
+    padding: 30px 16px;   
+    text-decoration: none;   
+    font-size: 17px; 
+}  
+
+.navbar a:hover {   
+    background: #ddd;   
+    color: black; 
+}  
+
+.nav-derecha {   
+    float: right; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado a flex-start para que las cajas se ajusten con el contenido */
+    height: calc(100vh - 80px); /* Altura de la ventana menos la altura de la navbar */
+    margin-top: 80px; /* Espacio para la navbar */
+    padding: 20px; /* Añadido padding para dar espacio alrededor */
+    box-sizing: border-box;
+}
+
+
+
+.caja h1 {
+    margin-top: 0;
+    color: white;
+}
+
+.caja p {
+    color: #ffffff;
+}
+
+
+.caja2{
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border: 0px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px; /* Mantener una anchura fija */
+    max-width: 100%; /* Asegurarse de que no exceda el contenedor padre */
+    margin-bottom: 20px; /* Espacio entre múltiples cajas */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.caja3{
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px; /* Mantener una anchura fija */
+    height: 500px;
+    max-width: 100%; /* Asegurarse de que no exceda el contenedor padre */
+    margin-bottom: 20px; /* Espacio entre múltiples cajas */
+    box-sizing: border-box;
+    
+}
+
+.iframe{
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: flex;
+        height: 60px;
+        text-align: auto;
+        display: flex;
+    }
+}
